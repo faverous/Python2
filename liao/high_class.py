@@ -31,3 +31,12 @@ Student.set_age = MethodType(set_age, None, Student)
 
 s2.set_age(22)
 print s2.age
+
+# 测试这样的Student类是否可以继承
+class Mine(Student):
+	pass
+
+s3 = Mine()
+s3.set_age(34)
+print s3.age
+#测试通过，可以继承
